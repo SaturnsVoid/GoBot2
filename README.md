@@ -1,5 +1,4 @@
 # GoBot2
-
 After seeing another users Go based botnet i wanted to do more work on my GoBot, But i ended up building something a bit more. There is issues with this but it more of a advanced PoC.... I am not a good coder but i was able to make this buy doing some basic reading online. There was more i wanted to do with this project but i stopped, I am getting out of making Malware and virus's... I am going to move on to more legitimet things. Though i will be posting some of my old projects on my Github, and most of witch are malevolent i am putting them here to make it simpler for the 'good guys' to fight them and there kin.
 
 
@@ -20,7 +19,6 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 + More
 
 # Bot Features
-
 * Safe Error Handling
 * Have Unlimited Panels
 * Encoding and Obfuscation
@@ -70,7 +68,6 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 
 
 # Some Info about the C&C
-
 The C&C is a program, You can compile it for Windows, Linux, Mac systems. Its a self-running web-server that handles all connections on the selected port in the settings. it will serve the HTLM C&C to a connector if you allow it and it saves data about account, bots and commands as a SQL database and bots files (screenshots, keylogs, ect) as file under the bots own "Profile"
 You can control the botnet from the program(more secure) or control it from the HTML C&C. The C&C's program is extremely stable, Go based servers are know for handling millions or requests at once without fail, just make sure you have a good connection.
 The C&C has a build in hard-coded login (kinda like a Backdoor) you can use if you 'forgot' the account login. the C&C can have any number of accounts.
@@ -78,7 +75,6 @@ With it being a self-contained program this removes the issue of SQLi attacks on
 The C&C can also run inside a Tor Hidden service if configured right and the client (bot) can connect to it using a onion.to or onion.cab forwarder if needed. Tor can also be used by the bot via a SOCKS proxy... Simple to do, Google it.
 
 # How to Build and Use
-
 Bot Settings are located in "Variables.go" Server Setting are located in "Server.go"
 
 Compile GoBot.go with correct settings, Make a MySQL Database and import db file, Compile Server.go with correct settings
@@ -89,9 +85,12 @@ Compile GoBot.go with correct settings, Make a MySQL Database and import db file
 Always compile with '-w -s' ldflags to strip any debug information from the binary.
 
 # Included Tools
-* Tool for the project (Obfuscator and other crap. w/ source in VB.net)
+* Tool for the project (Obfuscator (Char+1) and other crap. w/ source in VB.net)
 * Downloader.go (GoLANG Download and Run Example)
 * DownloaderWithUAC.go (GoLANG Download and Run Example with UAC Bypass)
+
+# Obfuscator
+It not really a Obfuscator all it does it move the Char +1 to and A = B, C = D, ect. Simple but it will slow down people wanting to mess with the program and also programs that search for keywords...
 
 # Packages Used
 * github.com/NebulousLabs/go-upnp
@@ -100,8 +99,13 @@ Always compile with '-w -s' ldflags to strip any debug information from the bina
 * github.com/atotto/clipboard
 * github.com/StackExchange/wmi
 
-# Credits and Stuff
+# Images
+* http://prnt.sc/d67nh5
+* http://prnt.sc/d67ogh
+* http://prnt.sc/d67oqh
+* http://prnt.sc/d6esj3
 
+# Credits and Stuff
 * https://github.com/decred/gominer
 * https://github.com/robvanmieghem/gominer
 * https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/04.5.html
