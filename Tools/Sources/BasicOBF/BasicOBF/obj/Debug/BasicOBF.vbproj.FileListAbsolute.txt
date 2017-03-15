@@ -1,0 +1,20 @@
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\bin\Debug\BasicOBF.exe
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\bin\Debug\BasicOBF.pdb
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\bin\Debug\BasicOBF.xml
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.vbprojResolveAssemblyReference.cache
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.Form1.resources
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.Resources.resources
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.vbproj.GenerateResource.Cache
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.exe
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.xml
+C:\Users\satur\Desktop\BasicOBF\BasicOBF\obj\Debug\BasicOBF.pdb
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\BasicOBF.vbprojResolveAssemblyReference.cache
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\BasicOBF.vbproj.GenerateResource.Cache
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\bin\Debug\Tool.exe
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\bin\Debug\Tool.pdb
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\bin\Debug\Tool.xml
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\Tool.Form1.resources
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\Tool.Resources.resources
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\Tool.exe
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\Tool.xml
+E:\Computer\Programming\Visual Basic\BasicOBF\BasicOBF\obj\Debug\Tool.pdb

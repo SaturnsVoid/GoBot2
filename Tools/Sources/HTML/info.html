@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Botnet C&C: Information</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<script src="https://use.fontawesome.com/e3e6a398df.js"></script>
+	
+	<style>
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+		  * { margin: 0; padding: 0; }
+	   p { padding: 10px; }
+	   #left { position: absolute; left: 0;  width: 50%; }
+	   #right { position: absolute; right: 0;  width: 50%; }
+</style>
+
+</head>
+
+<body>
+<div class="pure-menu pure-menu-horizontal" align="center">
+    <ul class="pure-menu-list">
+	<span class="pure-menu-heading" align="left">Botnet C&C</span>
+        <li class="pure-menu-item pure-menu-selected"><a href="./panel" class="pure-menu-link">Control Panel</a></li>
+		<li class="pure-menu-item pure-menu-selected"><a href="./files" class="pure-menu-link">File Browser</a></li>
+		<li class="pure-menu-item pure-menu-selected"><a href="./taskmgr" class="pure-menu-link">Task Managment</a></li>
+		<li class="pure-menu-item pure-menu-selected"><a href="./syslogs" class="pure-menu-link">C&C Logs</a></li>
+		<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a  id="menuLink1" class="pure-menu-link">Tools</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="./build" class="pure-menu-link">Bot Builder</a></li>
+                <li class="pure-menu-item"><a href="./dbuild" class="pure-menu-link">Downloader Builder</a></li>
+                <li class="pure-menu-item"><a href="./tools" class="pure-menu-link">Cryptography Tools</a></li>
+            </ul>
+        </li>
+		<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a id="menuLink1" class="pure-menu-link">User Managment</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="./account" class="pure-menu-link">Account Settings</a></li>
+                <li class="pure-menu-item"><a href="./logout" class="pure-menu-link">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+<div align="center"><h2>Bot Information</h2></div>
+<br>
+{STATS}
+<br>
+<div align="center">
+<img alt="" src="./files/{GUID}/Screenshots/Default.png" style="width: 500px; height: 281px;" />
+<br>
+<a>Last Check-In: {LASDATE} </a>
+<br>
+<a>Client Version: {VERSION} </a>
+<br>
+	<a class="button-warning pure-button" href="./purge?guid={GUID}"><i class="fa fa-times fa-lg"></i>  Delete from Database</a> <a class="button-secondary pure-button" href="./refresh?guid={GUID}"><i class="fa fa-refresh fa-lg"></i>  Refresh Info</a>
+<br>
+<div id="left" align="center">
+<form class="pure-form pure-form-stacked">
+	<label for="1">GUID</label>
+    <input name="1" type="text" value="{GUID}" readonly>
+	<label for="2">IP Address</label>
+    <input name="2" type="text" value="{IP}" readonly>
+	<label for="2">Who am I</label>
+    <input name="2" type="text" value="{WHOAMI}" readonly>
+	<label for="2">Operating System</label>
+    <input name="2" type="text" value="{OS}" readonly>
+	<label for="2">Date Installed</label>
+    <input name="2" type="text" value="{INSDATE}" readonly>
+	<label for="2">Have Admin Rights?</label>
+    <input name="2" type="text" value="{ADMIN}" readonly>
+	<label for="2">Anti-Virus</label>
+    <input name="2" type="text" value="{AV}" readonly>
+	<label for="2">CPU Information</label>
+    <input name="2" type="text" value="{CPU}" readonly>
+	<label for="2">GPU Information</label>
+    <input name="2" type="text" value="{GPU}" readonly>
+	</form>
+	</div>
+	<div id="right" align="center">
+	<form class="pure-form pure-form-stacked">
+	<label for="3">Keylogger</label>
+    <input name="3" type="text" value="{STATE1}" readonly>
+	<label for="3">Reverce HTTP</label>
+    <input name="3" type="text" value="{STATE2}" readonly>
+	<br>
+	<a href="./files/{GUID}/Files/" class="pure-menu-link">Files Folder</a>
+	<a href="./files/{GUID}/Keylogs/" class="pure-menu-link">Keylogs Folder</a>
+	<a href="./files/{GUID}/Screenshots/" class="pure-menu-link">Screenshots Folder</a>
+	<br>
+	<a href="./files/{GUID}/Files/Installed Software.txt" class="pure-menu-link">Installed Software</a>
+	<a href="./files/{GUID}/Files/IP Config.txt" class="pure-menu-link">IP Config</a>
+	<a href="./files/{GUID}/Files/System Information.txt" class="pure-menu-link">System Information</a>
+	<a href="./files/{GUID}/Files/WiFi Information.txt" class="pure-menu-link">WiFi Information</a>
+	</div>
+</form>
+</div>
+</body>

@@ -1,0 +1,10 @@
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\bin\Debug\DetectAdmin.exe
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\bin\Debug\DetectAdmin.pdb
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\bin\Debug\DetectAdmin.xml
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.vbprojResolveAssemblyReference.cache
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.Form1.resources
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.Resources.resources
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.vbproj.GenerateResource.Cache
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.exe
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.xml
+C:\Users\satur\Desktop\DetectAdmin\DetectAdmin\obj\Debug\DetectAdmin.pdb
