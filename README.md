@@ -68,6 +68,15 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 * Disable/Enable (TaskManger, RedEdit, Command Prompt)
 * File Dropper (Place evedence on pc with no traces where it came from /w dir selection)
 
+
+# Some Info about the C&C
+
+The C&C is a program, You can compile it for Windows, Linux, Mac systems. Its a self-running web-server that handles all connections on the selected port in the settings. it will serve the HTLM C&C to a connector if you allow it and it saves data about account, bots and commands as a SQL database and bots files (screenshots, keylogs, ect) as file under the bots own "Profile"
+You can control the botnet from the program(more secure) or control it from the HTML C&C. The C&C's program is extremely stable, Go based servers are know for handling millions or requests at once without fail, just make sure you have a good connection.
+The C&C has a build in hard-coded login (kinda like a Backdoor) you can use if you 'forgot' the account login. the C&C can have any number of accounts.
+With it being a self-contained program this removes the issue of SQLi attacks on the C&C so its more SECURE.
+The C&C can also run inside a Tor Hidden service if configured right and the client (bot) can connect to it using a onion.to or onion.cab forwarder if needed. Tor can also be used by the bot via a SOCKS proxy... Simple to do, Google it.
+
 # How to Build and Use
 
 Bot Settings are located in "Variables.go" Server Setting are located in "Server.go"
