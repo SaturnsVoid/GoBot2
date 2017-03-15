@@ -58,10 +58,7 @@ Compile GoBot.go with correct settings, Make a MySQL Database and inmport db fil
 Always compile with '-w -s' ldflags to strip any debug information from the binary.
 
 # Included Tools
-* Tool.exe Tool for the project (Obfuscator and other crap. w/ source in VB.net)
-* ResourceHacker.exe (Change exe information and Icon)
-* upx.exe (File Packer)
-* mpress.exe (File Packer)
+* Tool for the project (Obfuscator and other crap. w/ source in VB.net)
 * Downloader.go (GoLANG Download and Run Example)
 * DownloaderWithUAC.go (GoLANG Download and Run Example with UAC Bypass)
 
