@@ -70,9 +70,12 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 
 # How to Build and Use
 
-Compile GoBot.go with correct settings, Make a MySQL Database and inmport db file, Compile Server.go with correct settings
+Bot Settings are located in "Variables.go" Server Setting are located in "Server.go"
+
+Compile GoBot.go with correct settings, Make a MySQL Database and import db file, Compile Server.go with correct settings
 
 * go build -o GoBot.exe -ldflags "-H windowsgui" "C:\GoBot2\GoBot.go"
+* go build -0 Server.exe "C:\GoBot2\Console Server\Server.go"
 
 Always compile with '-w -s' ldflags to strip any debug information from the binary.
 
