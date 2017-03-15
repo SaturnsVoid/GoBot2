@@ -2,6 +2,23 @@
 
 After seeing another users Go based botnet i wanted to do more work on my GoBot, But i ended up building something a bit more. There is issues with this but it more of a advanced PoC.... I am not a good coder but i was able to make this buy doing some basic reading online. There was more i wanted to do with this project but i stopped, I am getting out of making Malware and virus's... I am going to move on to more legitimet things. Though i will be posting some of my old projects on my Github, and most of witch are malevolent i am putting them here to make it simpler for the 'good guys' to fight them and there kin.
 
+
+
+# C&C Features (Kept it vary simple):
+* Written in Go
+* Cross-Platform
+* SQL Database for Information
+* Secure Login System
+* Hard-Coded Login System
+* Simple to use HTML & CSS C&C
+* Console Based C&C
+* Tight Security (No PHP!)
+* Encoded and Obfuscated Data
+* HTTPS or HTTP
+* Single, Selected, All Command Issuing
+* User-Agent Detection
+* + More
+
 # Current Features
 
 * Safe Error Handling
