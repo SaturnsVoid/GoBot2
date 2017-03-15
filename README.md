@@ -4,7 +4,7 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 
 
 
-# C&C Features (Kept it vary simple):
+# C&C Features:
 * Written in Go
 * Cross-Platform
 * SQL Database for Information
@@ -17,9 +17,9 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 * HTTPS or HTTP
 * Single, Selected, All Command Issuing
 * User-Agent Detection
-* + More
++ More
 
-# Current Features
+# Bot Features
 
 * Safe Error Handling
 * Have Unlimited Panels
@@ -71,7 +71,9 @@ After seeing another users Go based botnet i wanted to do more work on my GoBot,
 # How to Build and Use
 
 Compile GoBot.go with correct settings, Make a MySQL Database and inmport db file, Compile Server.go with correct settings
+
 * go build -o GoBot.exe -ldflags "-H windowsgui" "C:\GoBot2\GoBot.go"
+
 Always compile with '-w -s' ldflags to strip any debug information from the binary.
 
 # Included Tools
@@ -79,14 +81,14 @@ Always compile with '-w -s' ldflags to strip any debug information from the bina
 * Downloader.go (GoLANG Download and Run Example)
 * DownloaderWithUAC.go (GoLANG Download and Run Example with UAC Bypass)
 
-# Packages Used (Must Import)
+# Packages Used
 * github.com/NebulousLabs/go-upnp
 * golang.org/x/sys/windows/registry
 * github.com/AllenDang/w32
 * github.com/atotto/clipboard
 * github.com/StackExchange/wmi
 
-# Current Credits and Stuff
+# Credits and Stuff
 
 * https://github.com/decred/gominer
 * https://github.com/robvanmieghem/gominer
