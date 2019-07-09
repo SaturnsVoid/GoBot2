@@ -169,6 +169,7 @@ Go is a amazing and powerful programming language. If you already haven't, check
  # News
  I just read a article on Bleeping Computer, https://www.bleepingcomputer.com/news/security/backdoored-torrents-infect-movie-tv-fans-with-gobot2-malware/ Seems someone has found a use for this project... I have no involvment with this group or person. I have nothing more to say on this matter.
 
+-Crab Crab
 ----------Update Log---------------------
 
 03/15/2017: Intial Upload...
