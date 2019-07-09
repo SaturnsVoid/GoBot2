@@ -166,6 +166,8 @@ Go is a amazing and powerful programming language. If you already haven't, check
 <img src="https://blockchain.info/Resources/buttons/donate_64.png"/>
 <p align="center">Please Donate To Bitcoin Address: <b>1AEbR1utjaYu3SGtBKZCLJMRR5RS7Bp7eE</b></p>
  
+ # News
+ I just read a article on Bleeping Computer, https://www.bleepingcomputer.com/news/security/backdoored-torrents-infect-movie-tv-fans-with-gobot2-malware/ Seems someone has found a use for this project... I have no involvment with this group or person. I have nothing more to say on this matter.
 
 ----------Update Log---------------------
 
