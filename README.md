@@ -1,4 +1,4 @@
-# New Project in the works, more info soon.
+# New project: https://github.com/SaturnsVoid/Project-Whis
 
 # GoBot2
 
